@@ -1,7 +1,7 @@
 const result = document.querySelector('.paragraph');
 const alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
 
-const randomWordFunction = () => {
+const getRandomWord = () => {
     let randomWord = '';
 
     for (let i = 0; i < 4; i++) {
@@ -15,6 +15,6 @@ const clickFunction = () => {
     const click = document.getElementById('click');
 
 }
-click.addEventListener('click', randomWordFunction);
+click.addEventListener('click', getRandomWord);
 
 //randomWordFunction();
